@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LayoutAdvanced">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/tv_spantastic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:textSize="25sp"
+                android:layout_margin="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/black"/>
+
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="206dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                app:strokeWidth="3dp"
+                app:strokeColor="@color/purple_500"
+                android:src="@drawable/img_2"
+                app:shapeAppearanceOverlay="@style/circle"/>
+
+            <RelativeLayout
+                android:layout_width="206dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/image_circle_border">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    app:cardCornerRadius="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_1"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:hint="Write something here"
+                android:padding="10dp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bottom_border"
+                android:hint="Write something here"
+                android:padding="10dp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border_color"
+                android:hint="Write something here"
+                android:padding="10dp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border_style"
+                android:hint="Write something here"
+                android:padding="10dp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_rounded_corners_border"
+                android:hint="Write something here"
+                android:padding="10dp"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/black"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#833AB4"
+                android:text="Click me"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_gradient"
+                android:text="Click me"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_rounded"
+                android:text="Click me"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_circle"
+                android:text="Click me"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_borders"
+                android:text="Click me"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_dashed"
+                android:text="Click me"
+                android:textColor="@color/black"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_gradient_rotate"
+                android:text="Click me"
+                android:textColor="@color/black"
+                app:backgroundTint="@null" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
